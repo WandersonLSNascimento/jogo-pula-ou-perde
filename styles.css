@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/mountains-rock-graphics-pixels-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.text {
+    background-color: rgb(143, 205, 225);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+}
+
+#game {
+    background-image: url(./images/0cb931dfc4ef79fb10671a645be30491d8bb9393r1-540-183_hq.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 200px;
+    border: 5px solid black;
+}
+
+#personagem {
+    width: 20px;
+    height: 50px;
+    background-color: rgb(230, 44, 44);
+    position: relative;
+    top: 150px;
+    left: 8px;
+}
+
+.animar {
+    animation: personagem 500ms infinite;
+}
+
+
+
+@keyframes personagem {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+
+#quadrado {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: quadrado 1s infinite linear;
+}
+
+@keyframes quadrado {
+    0% {
+        left: 480px;
+    }
+
+    100% {
+        left: -3px;
+    }
+}
